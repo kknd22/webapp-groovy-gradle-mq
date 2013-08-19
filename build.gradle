@@ -1,0 +1,69 @@
+apply plugin: 'groovy'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+repositories {
+    maven {url 'http://repo.springsource.org/release'}
+    mavenCentral()
+    maven { url 'http://mvnrepo.dev.ibu.geico.net:8080/public' }
+}
+
+configurations {
+    all*.exclude group: 'commons-logging', module: 'commons-logging'
+}
+
+ext.cglibVersion = '2.2.2'
+ext.logbackVersion = '1.0.13'
+ext.javaxInjectVersion = '1' 
+ext.jspVersion = '2.1'
+ext.servletVersion = '2.5'
+ext.slf4jVersion = '1.7.5'
+ext.springVersion = '3.2.4.RELEASE'
+ext.jmsApiVersion = '1.1-rev-1'
+ext.mqVersion ='7.5.0.2'
+
+dependencies {
+    compile "cglib:cglib-nodep:$ext.cglibVersion"
+    compile "ch.qos.logback:logback-classic:$ext.logbackVersion"
+    compile "org.slf4j:jcl-over-slf4j:$ext.slf4jVersion"
+    compile "org.springframework:spring-context:$ext.springVersion"
+    compile "org.springframework:spring-webmvc:$ext.springVersion"
+    compile "org.springframework:spring-jms:$ext.springVersion"
+    compile "javax.inject:javax.inject:$ext.javaxInjectVersion"
+
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mqjms:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mq:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mq.commonservices:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mq.headers:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mq.jmqi:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:com.ibm.mq.pcf:$ext.mqVersion"
+    compile "com.ibm.websphere.mq.standalone:dhbcore:$ext.mqVersion"
+
+
+
+    // TODO: currently forced to comment these provided dependencies out;
+    //   as adding Gradle classpath container to deployment assembly copies them
+    //   to /WEB-INF/lib which causes conflicts
+    providedCompile "javax.servlet:servlet-api:$ext.servletVersion"
+    providedCompile "javax.servlet.jsp:jsp-api:$ext.jspVersion"
+    providedCompile "javax.jms:jms-api:$ext.jmsApiVersion"
+
+    compile 'org.codehaus.groovy:groovy-all:2.0.5'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/java', 'src/main/groovy']
+        }
+    }
+    test {
+        resources {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.7'
+}
