@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.ibm.mq.headers-7.5.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.ibm.websphere.mq.standalone/com.ibm.mq.headers/7.5.0.2/jar/5f53cc0899d9fe16957ee865fb05419723ae8de9/com.ibm.mq.headers-7.5.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" name="Default" comment="" />
+    <ignored path=".idea/" />
+    <file path="/Dummy.txt" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376935084510" ignored="false" />
+    <file path="/a.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376492980370" ignored="false" />
+    <file path="/a.dummy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376675991988" ignored="false" />
+    <file path="/fragment.java" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376672815653" ignored="false" />
+    <file path="/SimpleController.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376679087530" ignored="false" />
+    <file path="/posted.jsp" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376505663618" ignored="false" />
+    <file path="/index.jsp" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376509020057" ignored="false" />
+    <file path="/SimpleData.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376568517876" ignored="false" />
+    <file path="/WebConfig.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376568958744" ignored="false" />
+    <file path="/interval.jsp" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376573151581" ignored="false" />
+    <file path="/ConfData.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376572339025" ignored="false" />
+    <file path="/conf.jsp" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376573302468" ignored="false" />
+    <file path="/build.gradle" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376663438641" ignored="false" />
+    <file path="/JMSConfig.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376665005481" ignored="false" />
+    <file path="/MqSynchronizedClient.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376593881516" ignored="false" />
+    <file path="/TaskManager.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376594064778" ignored="false" />
+    <file path="/JMSTemplateConfig.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376678523380" ignored="false" />
+    <file path="/MQConfig.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376924637877" ignored="false" />
+    <file path="/MqSynchClient.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376682480432" ignored="false" />
+    <file path="/IBMMqConfig.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1376925441624" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSynchClient.groovy" line="78" class="com.webapp.integration.MqSyncClient" package="com.webapp.integration">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="webapp-gradle-czl" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="303" column="18" selection-start="16334" selection-end="16334" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webapp-groovy-gradle-mq.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp-groovy-gradle-mq.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="53" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradlew.bat" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="17" selection-start="720" selection-end="723" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webapp-groovy-gradle-mq.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="vcs:///Users/u1cc32/GitHub/webapp-groovy-gradle-mq/webapp-groovy-gradle-mq.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="vcs:///Users/u1cc32/GitHub/webapp-groovy-gradle-mq/src/main/groovy/com/webapp/controller/SimpleController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="1" selection-start="1291" selection-end="1291" vertical-scroll-proportion="1.1585366">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MqSynchClient.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSynchClient.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/controller/SimpleController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="5" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfData.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="30" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="45" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="availableTasks">
+      <list>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles source set 'test:java'." />
+          <option name="name" value="compileTestJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles the outputs of this project." />
+          <option name="name" value="assemble" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project." />
+          <option name="name" value="build" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles the webapp into a war and deploys it to Jetty." />
+          <option name="name" value="jettyRunWar" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes source set 'test:resources'." />
+          <option name="name" value="processTestResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'test'." />
+          <option name="name" value="testClasses" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes source set 'main:resources'." />
+          <option name="name" value="processResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="name" value="wrapper" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Deletes the build directory." />
+          <option name="name" value="clean" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs the unit tests." />
+          <option name="name" value="test" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'main'." />
+          <option name="name" value="classes" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+          <option name="name" value="buildDependents" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+          <option name="name" value="war" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Stops Jetty." />
+          <option name="name" value="jettyStop" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects it depends on." />
+          <option name="name" value="buildNeeded" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles source set 'main:java'." />
+          <option name="name" value="compileJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Generates Javadoc API documentation for the main source code." />
+          <option name="name" value="javadoc" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Uses your files as and where they are and deploys them to Jetty." />
+          <option name="name" value="jettyRun" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs all checks." />
+          <option name="name" value="check" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles a jar archive containing the main classes." />
+          <option name="name" value="jar" />
+        </GradleTaskDescriptor>
+      </list>
+    </option>
+    <option name="expandStates">
+      <map>
+        <entry key="dependencies/webapp-gradle-czl/webapp-gradle-czl" value="true" />
+        <entry key="webapp-gradle-czl" value="true" />
+        <entry key="webapp-gradle-czl/webapp-gradle-czl" value="true" />
+        <entry key="webapp-groovy-gradle-mq" value="true" />
+      </map>
+    </option>
+    <option name="recentTasks">
+      <list>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Run" />
+          <option name="name" value="jettyRun" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Run" />
+          <option name="name" value="build" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Run" />
+          <option name="name" value="buildDependents" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Run" />
+          <option name="name" value="clean" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Debug" />
+          <option name="name" value="jettyRun" />
+        </GradleTaskDescriptor>
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/interval.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/TaskManager.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSynchronizedClient.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/config/JMSConfig.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/config/JMSTemplateConfig.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/controller/SimpleController.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSynchClient.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/config/MQConfig.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/config/IBMMqConfig.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/config/IbmMqConfig.groovy" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/webapp/controller/config/IbmMqConfig.groovy" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/gradlew.bat" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2488" />
+    <option name="height" value="1295" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages Scope="false" ProjectPane="true" />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-groovy-gradle-mq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-groovy-gradle-mq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-groovy-gradle-mq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-gradle-czl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-gradle-czl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-gradle-czl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-gradle-czl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.webapp.config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="groovy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/webapp/config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WEB-INF">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="groovy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="model">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="groovy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="integration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="groovy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controller">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp-gradle-czl">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="groovy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.webapp.config" />
+      <recent name="com.webapp.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Groovy.gradle:jettyRun">
+    <configuration default="false" name="gradle:jettyRun" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="webapp-gradle-czl" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="-DMQ_HOST=slsdv1mqm02.geico.net -DMQ_MANAGER_PORT=1417 -DMQ_MANAGER_NAME=slsdv1mqm2d1 -DMQ_MANAGER_CHANNEL=OSAI" />
+      <setting name="params" value="jettyRun" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="gradle:build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="webapp-gradle-czl" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="build" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="gradle:compileGroovy" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="webapp-gradle-czl" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="compileGroovy" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="gradle:buildDependents" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="webapp-gradle-czl" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="buildDependents" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="gradle:clean" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="webapp-gradle-czl" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="clean" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Groovy.gradle:jettyRun" />
+      <item index="1" class="java.lang.String" itemvalue="Groovy.gradle:build" />
+      <item index="2" class="java.lang.String" itemvalue="Groovy.gradle:compileGroovy" />
+      <item index="3" class="java.lang.String" itemvalue="Groovy.gradle:buildDependents" />
+      <item index="4" class="java.lang.String" itemvalue="Groovy.gradle:clean" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Groovy.gradle:jettyRun" />
+        <item index="1" class="java.lang.String" itemvalue="Groovy.gradle:buildDependents" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.gradle:clean" />
+        <item index="3" class="java.lang.String" itemvalue="Groovy.gradle:build" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.gradle:compileGroovy" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" name="Default" comment="" />
+      <created>1376489388922</created>
+      <updated>1376489388922</updated>
+    </task>
+    <task id="LOCAL-00001" summary="made sample run in groovy">
+      <created>1376576730149</created>
+      <updated>1376576730149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding jms stuff">
+      <created>1376658965280</created>
+      <updated>1376658965280</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding jms stuff">
+      <created>1376682664682</created>
+      <updated>1376682664682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commite all news">
+      <created>1376924877669</created>
+      <updated>1376924877669</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commite all news">
+      <created>1376925536582</created>
+      <updated>1376925536582</updated>
+    </task>
+    <task id="LOCAL-00006" summary="    Merge remote-tracking branch 'origin/with-mq' into HEAD&#10;    &#10;    Conflicts:&#10;        .idea/libraries/aopalliance_1_0.xml&#10;        .idea/libraries/cglib_nodep_2_2_2.xml&#10;        .idea/libraries/javax_inject_1.xml&#10;        .idea/libraries/jcl_over_slf4j_1_7_5.xml&#10;        .idea/libraries/logback_classic_1_0_13.xml&#10;        .idea/libraries/logback_core_1_0_13.xml&#10;        .idea/libraries/slf4j_api_1_7_5.xml&#10;        .idea/libraries/spring_aop_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_beans_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_context_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_core_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_expression_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_web_3_2_4_RELEASE.xml&#10;        .idea/libraries/spring_webmvc_3_2_4_RELEASE.xml&#10;        build.gradle&#10;        src/main/groovy/com/webapp/controller/SimpleController.groovy&#10;        src/main/groovy/com/webapp/model/ConfData.groovy&#10;">
+      <created>1376927947519</created>
+      <updated>1376927947519</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix bad merge">
+      <created>1376928563878</created>
+      <updated>1376928563878</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix bad merge 1">
+      <created>1376932792296</created>
+      <updated>1376932792296</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix bad merge 1">
+      <created>1376932832915</created>
+      <updated>1376932832915</updated>
+    </task>
+    <task id="LOCAL-00010" summary="initial check in">
+      <created>1376934514328</created>
+      <updated>1376934514328</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="2488" height="1295" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08804259" sideWeight="0.67148936" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851064" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964784" sideWeight="0.67148936" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293617" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979524" sideWeight="0.67148936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32851064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial check in-2" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="initial check in" />
+    <MESSAGE value="initial check in-2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/source/10e9dbd2d8ed0ab5c125aae8756e32c5174b46a2/spring-context-3.2.4.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.5755585" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.inject/javax.inject/1/source/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar!/javax/inject/Inject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="18" selection-start="7492" selection-end="7492" vertical-scroll-proportion="2.8462548" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/source/76c3ada4628bd6eaaa71a46b3e5215712a4d66d4/spring-jms-3.2.4.RELEASE-sources.jar!/org/springframework/jms/support/destination/DestinationResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="16" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.75032854" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/source/76c3ada4628bd6eaaa71a46b3e5215712a4d66d4/spring-jms-3.2.4.RELEASE-sources.jar!/org/springframework/jms/core/JmsOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="43" selection-start="5078" selection-end="5082" vertical-scroll-proportion="0.8318003" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/controller/SimpleController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/source/64a18f9ab380dff61216a1f9ec12773c2868ab2a/spring-web-3.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="233" column="31" selection-start="8895" selection-end="8895" vertical-scroll-proportion="0.44217083" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSynchClient.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="18" selection-start="16334" selection-end="16334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp-groovy-gradle-mq.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="53" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="720" selection-end="723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>gradle-1.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>webapp-groovy-gradle-mq</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>aopalliance-1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

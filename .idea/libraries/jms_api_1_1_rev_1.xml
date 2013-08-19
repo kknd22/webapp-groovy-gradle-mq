@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jms-api-1.1-rev-1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.jms/jms-api/1.1-rev-1/jar/af256c6e1b77f1599c33b61c730fb1ff591cbfb0/jms-api-1.1-rev-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/javax.jms/jms-api/1.1-rev-1/source/1b7776a0d1e1ba2d5b7d1832f6eb5cc59a86de3a/jms-api-1.1-rev-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
