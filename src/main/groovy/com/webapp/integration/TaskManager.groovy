@@ -1,5 +1,9 @@
 package com.webapp.integration
 
+import org.springframework.beans.factory.annotation.Qualifier
+import org.springframework.stereotype.Service
+
+import javax.inject.Inject
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -7,17 +11,29 @@ import java.util.concurrent.Executors
  * Created with IntelliJ IDEA.
  * User: u1cc32
  */
+
+@Service
 class TaskManager {
+
+
+    @Inject
+    MqSyncClient client
 
 
 
     def concurrentRun(int interval, int concurrencySize) {
+        MqSyncClient.unfinishedCount = concurrencySize
         ExecutorService pool = Executors.newFixedThreadPool(concurrencySize)
-        println "concurrencySize: " + concurrencySize
 
 
-        (0 .. concurrencySize).each{ pool.submit(new MqSyncClient(it)) }
+        (1 .. concurrencySize).each{
+            pool.submit(client)
+            sleep(interval)
+        }
 
+        println("#######################################################")
+        println("#                poolshutdown                         #")
+        println("#######################################################")
         pool.shutdown
     }
 

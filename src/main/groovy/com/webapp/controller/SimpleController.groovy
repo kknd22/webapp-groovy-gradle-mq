@@ -20,9 +20,10 @@ import javax.inject.Inject
 @RequestMapping("/conf.html")
 class SimpleController {
 
-    @Inject
-    MqSyncClient client
 
+
+    @Inject
+    TaskManager manager
 
     @RequestMapping(method = RequestMethod.GET)
     public String showForm(ModelMap model) {
@@ -33,14 +34,13 @@ class SimpleController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String onSubmit(@ModelAttribute("intervalData") ConfData data, ModelMap model) {
-        println("---------->    " + groovy.json.JsonOutput.toJson(data))
+        println("---------------- input:" + groovy.json.JsonOutput.toJson(data))
         model.addAttribute("confData", data)
-        client.queryMainframe(null)
+        //client.queryMainframe(null)
 
-        /*
-        def mgr = new TaskManager()
-        mgr.concurrentRun(data.interval, data.concurrenceSize)
-        */
+        manager.client.workerCount = 0
+
+        manager.concurrentRun(data.interval, data.concurrenceSize)
         "conf" //view name
     }
 }

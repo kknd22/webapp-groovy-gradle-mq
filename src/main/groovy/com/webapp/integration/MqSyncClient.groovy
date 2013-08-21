@@ -29,36 +29,41 @@ class MqSyncClient implements Callable<String> {
 
     //int id
 
-    @Inject Destination dQueue
-    @Inject Destination dReplyQueue
     @Inject
-    @Qualifier("dJmsTemplate") JmsTemplate dJmsTemplate
+    Destination dQueue
     @Inject
-    @Qualifier("dReplyJmsTemplate") JmsTemplate dReplyJmsTemplate
+    Destination dReplyQueue
+
+    @Inject
+    @Qualifier("dJmsTemplate")
+    JmsTemplate dJmsTemplate
+
+    @Inject
+    @Qualifier("dReplyJmsTemplate")
+    JmsTemplate dReplyJmsTemplate
 
     //final static PAY_LOAD = "<DateTimeRequest><RacfUserId>U68P26</RacfUserId></DateTimeRequest>"
     final static PAY_LOAD = "U68P26"
 
-//    MqSyncClient(int i) {
-//        id =i
-//    }
+    static int workerCount
+    static int unfinishedCount
 
     @Override
     String call() throws Exception {
-
-//        println " do work " + id
-//        return Integer.toString(id)  //To change body of implemented methods use File | Settings | File Templates.
+        queryMainframe(PAY_LOAD)
     }
 
 
     public String queryMainframe(final String pMessage) {
         final String lCorrelationId = String.format("%s::%s", "dateQueueName", UUID.randomUUID().toString());
-        final AtomicReference<Message> lJmsMessageRef = new AtomicReference<Message>()
+        final AtomicReference<TextMessage> lJmsMessageRef = new AtomicReference<TextMessage>()
+
+        String id = ++workerCount;
 
         dJmsTemplate.send(new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                TextMessage message = session.createTextMessage(PAY_LOAD)
+                TextMessage message = session.createTextMessage(pMessage)
                 message.setJMSCorrelationID(lCorrelationId)
                 message.setJMSReplyTo(dReplyQueue)
                 lJmsMessageRef.set(message)
@@ -66,18 +71,18 @@ class MqSyncClient implements Callable<String> {
             }
         })
 
-        println "-----> sent message: " + lJmsMessageRef.get()
-        println "lCorrelationId: " + lCorrelationId
+        println "--------------> #" + id + " sent message: [" + lJmsMessageRef.get().getText() +"]"
+        //println "lCorrelationId: " + lCorrelationId
 
         final Message lSentMessage = lJmsMessageRef.get()
         final String lMessageId = lSentMessage.getJMSMessageID()
         String lMessageSelector = String.format("JMSCorrelationID IN ('%s','%s')", lMessageId, lCorrelationId)
         TextMessage lResponseMessage = (TextMessage) dReplyJmsTemplate.receiveSelected(lMessageSelector)
 
-        println "<------ received message: [" + lResponseMessage.getText() + "]"
-//        def t2 = lResponseMessage.getText().split()
-//        def date = new Date(Long.getLong(t2[0]))
-//        println "<------ date time is: " + date
+        println "<============= #" + id + " received message: [" + lResponseMessage.getText() + "]"
+        --unfinishedCount
+        println " " + unfinishedCount + " : unfinishedCount ++++++++++++++++++++++++++++++++++++++++++ "
+
         lResponseMessage.getText()
 
 

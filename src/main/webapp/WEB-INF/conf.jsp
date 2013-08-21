@@ -17,6 +17,7 @@
         <tr>
             <td><form:label path="interval">interval:</form:label></td>
             <td><form:input path="interval"></form:input></td>
+            <td> ms</td>
         </tr>
         <tr>
             <td><form:label path="concurrenceSize">concurrence Size:</form:label></td>
