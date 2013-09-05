@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/basic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mqJarInsideWar.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mqJarOutsideWar.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/webapp/model/ConfData.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/webapp/config/IbmMqConfig.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/webapp/config/IbmMqConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSyncClient.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/MqSyncClient.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/webapp/controller/SimpleController.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/webapp/controller/SimpleController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/TaskManager.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/webapp/integration/TaskManager.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/conf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" name="Default" comment="" />
     <ignored path=".idea/" />
     <file path="/Dummy.txt" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1378214477835" ignored="false" />
     <file path="/a.groovy" changelist="1b8c735d-28fc-4451-9d0d-1a64c17e1c5a" time="1377092569148" ignored="false" />
@@ -336,6 +322,10 @@
       <list>
         <GradleTaskDescriptor>
           <option name="executorId" value="Run" />
+          <option name="name" value="clean" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="executorId" value="Run" />
           <option name="name" value="war" />
         </GradleTaskDescriptor>
         <GradleTaskDescriptor>
@@ -349,10 +339,6 @@
         <GradleTaskDescriptor>
           <option name="executorId" value="Run" />
           <option name="name" value="buildDependents" />
-        </GradleTaskDescriptor>
-        <GradleTaskDescriptor>
-          <option name="executorId" value="Debug" />
-          <option name="name" value="jettyRun" />
         </GradleTaskDescriptor>
       </list>
     </option>
@@ -874,7 +860,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Groovy.gradle:war">
+  <component name="RunManager" selected="Groovy.gradle:clean">
     <configuration default="false" name="gradle:jettyRun" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="" />
       <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
@@ -1021,10 +1007,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Groovy.gradle:war" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.gradle:jettyRun" />
-        <item index="2" class="java.lang.String" itemvalue="Groovy.gradle:buildDependents" />
-        <item index="3" class="java.lang.String" itemvalue="Groovy.gradle:clean" />
+        <item index="0" class="java.lang.String" itemvalue="Groovy.gradle:clean" />
+        <item index="1" class="java.lang.String" itemvalue="Groovy.gradle:war" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.gradle:jettyRun" />
+        <item index="3" class="java.lang.String" itemvalue="Groovy.gradle:buildDependents" />
         <item index="4" class="java.lang.String" itemvalue="Groovy.gradle:build" />
       </list>
     </recent_temporary>
@@ -1109,7 +1095,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2488" height="1295" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1949222" sideWeight="0.5702128" order="3" side_tool="false" content_ui="tabs" />
@@ -1127,7 +1113,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979524" sideWeight="0.5702128" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42978725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42978725" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
