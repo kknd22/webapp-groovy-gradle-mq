@@ -2,6 +2,8 @@ apply plugin: 'groovy'
 apply plugin: 'war'
 apply plugin: 'jetty'
 
+
+
 repositories {
     maven { url 'http://repo.springsource.org/release' }
     mavenCentral()
@@ -20,9 +22,15 @@ ext.servletVersion = '2.5'
 ext.slf4jVersion = '1.7.5'
 ext.springVersion = '3.2.4.RELEASE'
 ext.jmsApiVersion = '1.1-rev-1'
-ext.mqVersion = '7.5.0.2'
 
-//ext.mq_inside_war = true
+ext.mqJarInsideWar = false
+
+
+if (ext.mqJarInsideWar)
+    apply from: 'mqJarInsideWar.gradle'
+else
+   apply from: 'mqJarOutsideWar.gradle'
+
 
 
 dependencies  {
@@ -45,27 +53,10 @@ dependencies  {
 }
 
 
-    dependencies {
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mqjms:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mq:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mq.commonservices:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mq.headers:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mq.jmqi:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:com.ibm.mq.pcf:$ext.mqVersion"
-        compile "com.ibm.websphere.mq.standalone:dhbcore:$ext.mqVersion"
-    }
 
-/*
-    dependencies {
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mqjms:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.commonservices:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.headers:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.jmqi:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.pcf:$ext.mqVersion"
-        providedCompile "com.ibm.websphere.mq.standalone:dhbcore:$ext.mqVersion"
-    }
-*/
+war {
+    archiveName='jboss-spring-mq.war'
+}
 
 /*
 sourceSets {

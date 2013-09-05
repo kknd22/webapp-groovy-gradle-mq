@@ -1,5 +1,7 @@
 package com.webapp.integration
 
+import com.webapp.model.ConfData
+import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 
@@ -12,6 +14,7 @@ import java.util.concurrent.Executors
  * User: u1cc32
  */
 
+@Slf4j
 @Service
 class TaskManager {
 
@@ -19,22 +22,23 @@ class TaskManager {
     @Inject
     MqSyncClient client
 
+    ExecutorService pool = Executors.newCachedThreadPool()
 
 
-    def concurrentRun(int interval, int concurrencySize) {
-        MqSyncClient.unfinishedCount = concurrencySize
-        ExecutorService pool = Executors.newFixedThreadPool(concurrencySize)
+
+    def concurrentRun(ConfData data) {
+        MqSyncClient.workerCount = 0
+        MqSyncClient.simulatedResponseDelay=data.resopnseWaitTime
+        MqSyncClient.unfinishedCount.set(data.concurrenceSize)
 
 
-        (1 .. concurrencySize).each{
+        (1 .. data.concurrenceSize).each{
             pool.submit(client)
-            sleep(interval)
+            Thread.currentThread().sleep(data.interval)
         }
 
-        println("#######################################################")
-        println("#                poolshutdown                         #")
-        println("#######################################################")
-        pool.shutdown
+        log.info "#                poolshutdown                          #"
+        //pool.shutdown
     }
 
 /*

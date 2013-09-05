@@ -1,0 +1,11 @@
+ext.mqVersion = '7.5.0.2'
+
+dependencies {
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mqjms:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.commonservices:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.headers:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.jmqi:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:com.ibm.mq.pcf:$ext.mqVersion"
+    providedCompile "com.ibm.websphere.mq.standalone:dhbcore:$ext.mqVersion"
+}

@@ -3,6 +3,7 @@ package com.webapp.controller
 import com.webapp.integration.MqSyncClient
 import com.webapp.integration.TaskManager
 import com.webapp.model.ConfData
+import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.ui.ModelMap
 import org.springframework.web.bind.annotation.RequestMethod
@@ -13,13 +14,15 @@ import org.springframework.web.bind.annotation.RequestMapping
 
 import javax.inject.Inject
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
 
  */
+@Slf4j
 @Controller
 @RequestMapping("/conf.html")
 class SimpleController {
-
 
 
     @Inject
@@ -34,13 +37,11 @@ class SimpleController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String onSubmit(@ModelAttribute("intervalData") ConfData data, ModelMap model) {
-        println("---------------- input:" + groovy.json.JsonOutput.toJson(data))
+        log.info("---------------- input:" + groovy.json.JsonOutput.toJson(data))
         model.addAttribute("confData", data)
         //client.queryMainframe(null)
 
-        manager.client.workerCount = 0
-
-        manager.concurrentRun(data.interval, data.concurrenceSize)
+        manager.concurrentRun(data)
         "conf" //view name
     }
 }

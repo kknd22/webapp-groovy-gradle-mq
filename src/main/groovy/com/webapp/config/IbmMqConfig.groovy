@@ -38,11 +38,12 @@ import javax.jms.JMSException
     @Bean(name = ["jConnectionFactory"])
     public ConnectionFactory jmsConnectionFactory() throws JMSException {
         MQConnectionFactory cf = new MQConnectionFactory()
+
         // the following are pssed in from command line
-        cf.setHostName(env.getProperty("MQ_HOST"))
-        cf.setPort(env.getProperty("MQ_MANAGER_PORT").toInteger())
-        cf.setQueueManager(env.getProperty("MQ_MANAGER_NAME"))
-        cf.setChannel(env.getProperty("MQ_MANAGER_CHANNEL"))
+        cf.setHostName(env.getProperty("mq.queueManagerHost"))
+        cf.setPort(env.getProperty("mq.queueManagerPort").toInteger())
+        cf.setQueueManager(env.getProperty("mq.queueManagerName"))
+        cf.setChannel(env.getProperty("mq.queueManagerChannel"))
         cf.setTransportType(MQ_TRANSPORT_TYPE)
         cf
     }

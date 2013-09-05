@@ -8,7 +8,8 @@ package com.webapp.model
  * To change this template use File | Settings | File Templates.
  */
 class ConfData {
-    Integer interval = 2
-    Integer concurrenceSize =3
+    Integer interval = 50
+    Integer concurrenceSize =100
+    Integer resopnseWaitTime = 1000
 
 }

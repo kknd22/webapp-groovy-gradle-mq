@@ -1,5 +1,6 @@
 package com.webapp.integration
 
+import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.jms.core.JmsTemplate
 import org.springframework.jms.core.MessageCreator
@@ -12,6 +13,7 @@ import javax.jms.Message
 import javax.jms.Session
 import javax.jms.TextMessage
 import java.util.concurrent.Callable
+import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference
 
 
@@ -24,7 +26,7 @@ import java.util.concurrent.atomic.AtomicReference
  */
 
 @Service
-
+@Slf4j
 class MqSyncClient implements Callable<String> {
 
     //int id
@@ -46,7 +48,8 @@ class MqSyncClient implements Callable<String> {
     final static PAY_LOAD = "U68P26"
 
     static int workerCount
-    static int unfinishedCount
+    static AtomicInteger unfinishedCount = new AtomicInteger()
+    static int simulatedResponseDelay
 
     @Override
     String call() throws Exception {
@@ -71,17 +74,27 @@ class MqSyncClient implements Callable<String> {
             }
         })
 
-        println "--------------> #" + id + " sent message: [" + lJmsMessageRef.get().getText() +"]"
+        log.info "--------------> #" + id + " sent message: [" + lJmsMessageRef.get().getText() +"]"
         //println "lCorrelationId: " + lCorrelationId
 
         final Message lSentMessage = lJmsMessageRef.get()
         final String lMessageId = lSentMessage.getJMSMessageID()
         String lMessageSelector = String.format("JMSCorrelationID IN ('%s','%s')", lMessageId, lCorrelationId)
+
+
+        Thread.currentThread().sleep(simulatedResponseDelay)
+
         TextMessage lResponseMessage = (TextMessage) dReplyJmsTemplate.receiveSelected(lMessageSelector)
 
-        println "<============= #" + id + " received message: [" + lResponseMessage.getText() + "]"
-        --unfinishedCount
-        println " " + unfinishedCount + " : unfinishedCount ++++++++++++++++++++++++++++++++++++++++++ "
+        log.info "<============= #" + id + " received message: [" + lResponseMessage.getText() + "]"
+        int uf = unfinishedCount.decrementAndGet()
+        log.info " " + unfinishedCount + " : unfinishedCount ++++++++++++++++++++++++++++++++++++++++++ "
+        if (uf == 0) {
+            log.info ""
+            log.info "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+            log.info "|                       FINISHED NORMAL                         |"
+            log.info "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        }
 
         lResponseMessage.getText()
 
