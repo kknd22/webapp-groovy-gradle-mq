@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com.ibm.mq.pcf-7.5.0.2">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/com.ibm.websphere.mq.standalone/com.ibm.mq.pcf/7.5.0.2/jar/adb9f976051ea3be57ab46cdcb9b2afb10f20f0c/com.ibm.mq.pcf-7.5.0.2.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
