@@ -29,7 +29,7 @@ ext.mqJarInsideWar = false
 if (ext.mqJarInsideWar)
     apply from: 'mqJarInsideWar.gradle'
 else
-   apply from: 'mqJarOutsideWar.gradle'
+    apply from: 'mqJarOutsideWar.gradle'
 
 
 

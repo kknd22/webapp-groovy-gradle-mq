@@ -1,0 +1,11 @@
+*.class
+*.log*
+*.fdc
+.gradle/**
+.idea/**
+build/**
+
+
+.gradle/1.7/taskArtifacts/taskArtifacts.bin
+
+.idea/workspace.xml

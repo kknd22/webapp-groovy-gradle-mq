@@ -37,7 +37,7 @@ class TaskManager {
             Thread.currentThread().sleep(data.interval)
         }
 
-        log.info "#                poolshutdown                          #"
+        //log.info "#                poolshutdown                          #"
         //pool.shutdown
     }
 

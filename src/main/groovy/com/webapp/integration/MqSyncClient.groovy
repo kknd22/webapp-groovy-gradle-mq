@@ -81,8 +81,8 @@ class MqSyncClient implements Callable<String> {
         final String lMessageId = lSentMessage.getJMSMessageID()
         String lMessageSelector = String.format("JMSCorrelationID IN ('%s','%s')", lMessageId, lCorrelationId)
 
-
-        Thread.currentThread().sleep(simulatedResponseDelay)
+        if (simulatedResponseDelay>0)
+            Thread.currentThread().sleep(simulatedResponseDelay)
 
         TextMessage lResponseMessage = (TextMessage) dReplyJmsTemplate.receiveSelected(lMessageSelector)
 

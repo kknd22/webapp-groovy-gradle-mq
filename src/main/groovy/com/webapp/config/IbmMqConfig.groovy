@@ -35,8 +35,8 @@ import javax.jms.JMSException
     static final DATE_REPLY_QUEUE_NAME = "PAS.DATETIME.RTQ"
     static final CCSID=850
 
-    @Bean(name = ["jConnectionFactory"])
-    public ConnectionFactory jmsConnectionFactory() throws JMSException {
+    @Bean(name = ["mqConnectionFactory"])
+    public ConnectionFactory mqConnectionFactory() throws JMSException {
         MQConnectionFactory cf = new MQConnectionFactory()
 
         // the following are pssed in from command line
