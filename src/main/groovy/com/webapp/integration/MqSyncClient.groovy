@@ -13,6 +13,7 @@ import javax.jms.Message
 import javax.jms.Session
 import javax.jms.TextMessage
 import java.util.concurrent.Callable
+import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference
 
@@ -44,12 +45,21 @@ class MqSyncClient implements Callable<String> {
     @Qualifier("dReplyJmsTemplate")
     JmsTemplate dReplyJmsTemplate
 
+    @Inject
+    @Qualifier("sJmsTemplate")
+    JmsTemplate sJmsTemplate
+
+    @Inject
+    @Qualifier("sReplyJmsTemplate")
+    JmsTemplate sReplyJmsTemplate
+
     //final static PAY_LOAD = "<DateTimeRequest><RacfUserId>U68P26</RacfUserId></DateTimeRequest>"
     final static PAY_LOAD = "U68P26"
 
     static int workerCount
     static AtomicInteger unfinishedCount = new AtomicInteger()
     static int simulatedResponseDelay
+    static AtomicBoolean isUsingNativeMq = new AtomicBoolean(true)
 
     @Override
     String call() throws Exception {
@@ -63,7 +73,22 @@ class MqSyncClient implements Callable<String> {
 
         String id = ++workerCount;
 
-        dJmsTemplate.send(new MessageCreator() {
+        JmsTemplate jmsTemplate
+        JmsTemplate replayJmsTemplate
+
+        boolean isNativeMq = isUsingNativeMq.getAndSet(!isUsingNativeMq.get())
+        if (isNativeMq) {
+            jmsTemplate = dJmsTemplate
+            replayJmsTemplate = dReplyJmsTemplate
+            println("q q q q q q q q q q q q q q q q native mq connection factory used")
+        } else {
+            jmsTemplate = sJmsTemplate
+            replayJmsTemplate = sReplyJmsTemplate
+            println("s-s-s-s-s-s-s-s-s-s-s-s-s-s-s-s spring caching connection factory used")
+        }
+
+
+        jmsTemplate.send(new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
                 TextMessage message = session.createTextMessage(pMessage)
@@ -74,17 +99,17 @@ class MqSyncClient implements Callable<String> {
             }
         })
 
-        log.info "--------------> #" + id + " sent message: [" + lJmsMessageRef.get().getText() +"]"
+        log.info "--------------> #" + id + " sent message: [" + lJmsMessageRef.get().getText() + "]"
         //println "lCorrelationId: " + lCorrelationId
 
         final Message lSentMessage = lJmsMessageRef.get()
         final String lMessageId = lSentMessage.getJMSMessageID()
         String lMessageSelector = String.format("JMSCorrelationID IN ('%s','%s')", lMessageId, lCorrelationId)
 
-        if (simulatedResponseDelay>0)
+        if (simulatedResponseDelay > 0)
             Thread.currentThread().sleep(simulatedResponseDelay)
 
-        TextMessage lResponseMessage = (TextMessage) dReplyJmsTemplate.receiveSelected(lMessageSelector)
+        TextMessage lResponseMessage = (TextMessage) replayJmsTemplate.receiveSelected(lMessageSelector)
 
         log.info "<============= #" + id + " received message: [" + lResponseMessage.getText() + "]"
         int uf = unfinishedCount.decrementAndGet()

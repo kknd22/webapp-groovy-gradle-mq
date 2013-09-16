@@ -21,14 +21,12 @@ import javax.jms.JMSException
 class JMSTemplateConfig {
 
 
-/*
     @Inject  @Qualifier("mqConnectionFactory")
     ConnectionFactory connectionFactory
-*/
 
 
     @Inject  @Qualifier("springCachingConnectionFactory")
-    ConnectionFactory connectionFactory
+    ConnectionFactory sConnectionFactory
 
     @Inject @Qualifier("dQueue")
     Destination dQueue
@@ -40,7 +38,7 @@ class JMSTemplateConfig {
     @Bean(name = ["dJmsTemplate"])
     public JmsTemplate dateJmsTemplate() throws JMSException {
         log.info(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
-        log.info(":   using class" + connectionFactory.getClass().getSimpleName() + "   :")
+        log.info(":   using ConnectionFactory class: " + connectionFactory.getClass().getSimpleName() )
         log.info(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
         def template = new JmsTemplate(connectionFactory)
         template.setDefaultDestination(dQueue)
@@ -51,6 +49,26 @@ class JMSTemplateConfig {
     @Bean(name = ["dReplyJmsTemplate"])
     public JmsTemplate dateReplyJmsTemplate() throws JMSException {
         def template = new JmsTemplate(connectionFactory)
+        template.setDefaultDestination(dReplyQueue)
+        template.setReceiveTimeout(10000)
+        template
+    }
+
+
+    @Bean(name = ["sJmsTemplate"])
+    public JmsTemplate sDateJmsTemplate() throws JMSException {
+        log.info(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+        log.info(":   using ConnectionFactory class: " + sConnectionFactory.getClass().getSimpleName() )
+        log.info(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+        def template = new JmsTemplate(sConnectionFactory)
+        template.setDefaultDestination(dQueue)
+        template.setReceiveTimeout(10000)
+        template
+    }
+
+    @Bean(name = ["sReplyJmsTemplate"])
+    public JmsTemplate sDateReplyJmsTemplate() throws JMSException {
+        def template = new JmsTemplate(sConnectionFactory)
         template.setDefaultDestination(dReplyQueue)
         template.setReceiveTimeout(10000)
         template
